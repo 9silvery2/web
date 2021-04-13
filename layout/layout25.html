@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout25</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        #wrap {
+            width: 100%;
+        }
+
+        #main {
+            width: 1300px;
+            margin: 0 auto;
+        }
+
+        #header {
+            height: 100px;
+            background-color: #e8eaf6 ;
+        }
+
+        #article {
+            height: 300px;
+            background-color: #c5cae9 ;
+        }
+
+        #cont1 {
+            overflow: hidden;
+        }
+        .c1_cont1 {
+            width: 30%;
+            height: 400px;
+            background-color: #9fa8da ;
+            float: left;
+        }
+        .c1_cont2 {
+            width: 70%;
+            height: 200px;
+            background-color: #7986cb ;
+            float: left;
+        }
+        .c1_cont3 {
+            width: 70%;
+            height: 200px;
+            background-color: #5c6bc0 ;
+            float: left;
+        }
+
+        #cont2 {
+            overflow: hidden;
+        }
+        .c2_cont1 {
+            width: 33.3333%;
+            height: 300px;
+            background-color: #3f51b5 ;
+            float: left;
+        }
+        .c2_cont2 {
+            width: 33.3333%;
+            height: 300px;
+            background-color: #3949ab ;
+            float: left;
+        }
+        .c2_cont3 {
+            width: 33.3333%;
+            height: 300px;
+            background-color: #303f9f ;
+            float: left;
+        }
+
+        #cont3 {
+            height: 200px;
+            background-color: #9fa8da;
+            overflow: hidden;
+        }
+        #cont3 > article {
+            width: 21%;
+            height: 150px;
+            margin: 2%;
+            background-color: #3949ab ;
+            float: left;
+            border-radius: 10px;
+        }
+
+        #footer {
+            height: 100px;
+            background-color: #c5cae9 ;
+        }
+
+        @media (max-width: 1220px){
+            #main {width: 100%;}
+            .c2_cont1 {width: 50%;}
+            .c2_cont2 {width: 50%;}
+            .c2_cont3 {display: none;}
+            #cont3 > article {width: 29.3333%;}
+            #cont3 > article:last-child{display: none;}
+        }
+        @media (max-width: 900px){
+            #main {width: 100%;}
+            .c2_cont1 {width: 100%;}
+            .c2_cont2 {width: 100%;}
+            .c2_cont3 {display: none;}
+            #cont3 > article {width: 29.3333%;}
+            #cont3 > article:last-child{display: none;}
+        }
+        @media (max-width: 600px){
+            #main {width: 100%;}
+            .c1_cont1 {width: 100%;}
+            .c1_cont2 {width: 100%;}
+            .c1_cont3 {width: 100%;}
+            .c2_cont1 {width: 100%;}
+            .c2_cont2 {width: 100%;}
+            .c2_cont3 {display: none;}
+            #cont3 {height: 520px;}
+            #cont3 > article {width: 96%;}
+            #cont3 > article:last-child{display: none;}
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrap">
+        <main id="main">
+            <header id="header"></header>
+            <article id="article"></article>
+            <section id="cont1">
+                <article class="c1_cont1"></article>
+                <article class="c1_cont2"></article>
+                <article class="c1_cont3"></article>
+            </section>
+            <section id="cont2">
+                <article class="c2_cont1"></article>
+                <article class="c2_cont2"></article>
+                <article class="c2_cont3"></article>
+            </section>
+            <section id="cont3">
+                <article></article>
+                <article></article>
+                <article></article>
+                <article></article>
+            </section>
+            <footer id="footer"></footer>
+        </main>
+    </div>
+</body>
+
+</html>

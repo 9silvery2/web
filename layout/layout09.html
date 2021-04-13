@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout09</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        #wrap {
+            width: 1000px;
+            margin: 0 auto;
+        }
+        #header {
+            width: 1000px;
+            height: 100px;
+            background-color: #111;
+        }
+        #nav {
+            width: 1000px;
+            height: 100px;
+            background-color: #222;
+        }
+        #side {
+            width: 400px;
+            height: 600px;
+            background-color: #333;
+            float: left;
+        }
+        #content1 {
+            width: 600px;
+            height: 600px;
+            background-color: #444;
+            float: left;
+        }
+        #content2 {
+            width: 600px;
+            height: 300px;
+            background-color: rgba(0, 0, 0, 0.3);
+        }
+        .cont1 {
+            width: 250px;
+            height: 250px;
+            background-color: rgba(0, 0, 0, 0.3);
+            margin: 325px 40px 325px 30px;
+            float: left;
+        }
+        .cont2 {
+            width: 250px;
+            height: 250px;
+            background-color: rgba(0,0,0,0.3);
+            margin: 325px 30px 325px 0;
+            float: left;
+        }
+        #footer {
+            width: 1000px;
+            height: 100px;
+            background-color: #111;
+            clear: both;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div id="header"></div>
+        <div id="nav"></div>
+        <div id="side"></div>
+        <div id="content1">
+            <div id="content2">
+                <div class="cont1"></div>
+                <div class="cont2"></div>
+            </div>
+        </div>
+        <div id="footer"></div>
+    </div>
+</body>
+</html>

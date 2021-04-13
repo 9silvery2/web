@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout100</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        /* 레이아웃 */
+        #wrap {}
+
+        #header {
+            height: 100px;
+        }
+
+        #banner {
+            background: url(img/banner-bg2.png) no-repeat;
+            height: 500px;
+            background-size: cover;
+            position: relative;
+        }
+
+        #content {
+            background-color: #f4faff;
+            margin: 0 auto;
+        }
+
+        #footer {
+            height: 100px;
+            background-color: #000;
+        }
+
+        .container {
+            width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* 내용 */
+
+        /* 헤더 */
+        .header {
+            display: flex;
+        }
+
+        .header .logo {
+            font-size: 20px;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-top: 20px;
+            width: 20%;
+        }
+
+        .header .menu {
+            width: 65%;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .header .menu li {
+            display: inline;
+        }
+
+        .header .menu li a {
+            text-decoration: none;
+            padding-right: 40px;
+            color: #000;
+            font-size: 16px;
+        }
+
+        .header .log {
+            margin-top: 30px;
+        }
+
+        .header .log a {
+            text-decoration: none;
+            color: #000;
+            font-size: 16px;
+            border: 2px solid #000;
+            border-radius: 20px;
+            padding: 10px;
+        }
+
+        /* 배너 */
+
+        .nav {
+            text-align: center;
+        }
+
+        .nav .bp {
+            color: #fff;
+            font-size: 20px;
+            padding-top: 100px;
+        }
+
+        .nav h3 {
+            color: #fff;
+            font-size: 50px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        /* 컨텐츠 */
+        .contents {
+            text-align: center;
+        }
+
+        .cont1 {
+            padding-bottom: 100px;
+        }
+        .cont1 .cp1 {
+            display: inline-block;
+            width: 50px;
+            border-radius: 20px;
+            background-color: #e8ecf9;
+            padding: 5px;
+            margin-top: 100px;
+        }
+        .cont1 h4 {
+            font-size: 30px;
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+
+        img {
+            max-width: 100%;
+            width: 1130px;
+        }
+
+        .cont2 {
+            position: relative;
+            height: 700px;
+            text-align: left;
+        }
+
+        .c2_box1 {
+            height: 600px;
+        }
+        .c2_box1 .c2_box1-1 {
+            width: 48%;
+            height: 50%;
+            background-color: #5470f8 ;
+            margin: 2%;
+            border-radius: 30px;
+            background-image: url(img/cont2-img2.png);
+            background-repeat: no-repeat;
+            background-size: 200px;
+            background-position: right bottom;
+        }
+        .c2_box1 .c2_box1-2 {
+            width: 48%;
+            height: 50%;
+            margin: 2%;
+            background-color: #5470f8 ;
+            border-radius: 30px;
+            background-image: url(img/cont2-img1.png);
+            background-repeat: no-repeat;
+            background-size: 200px;
+            background-position: right bottom;
+        }
+        .c2_box2 {
+            width: 46%;
+            height: 630px;
+            background-color: #5470f8 ;
+            margin-left: 2%;
+            margin-right: 2%;
+            position: absolute;
+            top: 0; right: 0;
+            border-radius: 30px;
+            background-image: url(img/cont2-img3.png);
+            background-repeat: no-repeat;
+            background-size: 400px;
+            background-position: center bottom ;
+        }
+
+        .box_tit {
+            color: #fff;
+            font-size: 18px;
+            padding: 30px 0 20px 20px;
+        }
+        .box_text {
+            color: #fff;
+            font-size: 30px;
+            padding: 0 0 30px 20px;
+        }
+        .box_more {
+            color: #fff;
+            font-size: 16px;
+            padding: 0 0 0 20px;
+        }
+
+        /* 푸터 */
+    </style>
+</head>
+
+<body>
+    <div id="wrap">
+        <header id="header">
+            <div class="container">
+                <div class="header">
+                    <div class="logo">naver<br>influencer center</div>
+                    <div class="menu">
+                        <ul>
+                            <li><a href="#">인플루언서 안내</a></li>
+                            <li><a href="#">광고수익 혜택</a></li>
+                            <li><a href="#">성장 지원 프로그램</a></li>
+                            <li><a href="#">브랜드커넥트</a></li>
+                            <li><a href="#">공지</a></li>
+                        </ul>
+                    </div>
+                    <div class="log">
+                        <a href="#">인플루언서 로그인</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <nav id="banner">
+            <div class="nav">
+                <p class="bp">광고수익 혜택</p>
+                <h3>인플루언서의 수익을 더 높여줄<br>특별한 광고가 제공됩니다.</h3>
+            </div>
+        </nav>
+        <section id="content">
+            <div class="contents">
+                <div class="cont1">
+                    <p class="cp1">NEW</p>
+                    <h4>더 커진 수익과 효과적인 노출<br>새롭고 강력한 헤드뷰 광고를 선보입니다.</h4>
+                    <figure><img src="img/content-img1.png" alt="img"></figure>
+                </div>
+                <div class="cont2">
+                    <div class="c2_box1">
+                        <div class="c2_box1-1">
+                            <div class="box_tit">인플루언서 대상</div>
+                            <div class="box_text">인플루언서 홈 영역에<br>일반 광고 제공</div>
+                            <div class="box_more">자세히 알아보기</div>
+                        </div>
+                        <div class="c2_box1-2">
+                            <div class="box_tit">상위 인플루언서 대상</div>
+                            <div class="box_text">더 높은 수익의<br>프리미엄 광고 제공</div>
+                            <div class="box_more">자세히 알아보기</div>
+                        </div>
+                    </div>
+                    <div class="c2_box2">
+                            <div class="box_tit">우수 인플루언서 대상</div>
+                            <div class="box_text">다양한 브랜드와 연결될 수 있는<br>브랜드 커넥트 제공</div>
+                            <div class="box_more">자세히 알아보기</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer id="footer"></footer>
+    </div>
+</body>
+
+</html>
