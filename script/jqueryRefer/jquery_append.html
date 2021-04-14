@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>jQuery | animation()</title>
+    <title>jQuery | append()</title>
     <style>
         @font-face {
             font-family: 'NEXON Lv1 Gothic OTF';
@@ -34,6 +34,7 @@
             width: 100%;
             vertical-align: top;
             border-radius: 5px;
+            margin: 5px;
         }
         ul {
             list-style: none;
@@ -115,127 +116,140 @@
         .blue { background-color: #e3f2fd;}
 
         /* option */
-        /* sample01 */
         .ex1 ul {
             display: flex;
-            flex-wrap: wrap;
         }
         .ex1 li {
-            flex: 0 0 23%;
-            margin: 1%;
+            width: 20%;
+            padding: 1%;
         }
 
         /* sample02 */
         .ex2 ul {
             display: flex;
-            flex-wrap: wrap;
         }
         .ex2 li {
-            flex: 0 0 23%;
-            margin: 1%;
+            width: 20%;
+            padding: 1%;
         }
 
         /* sample03 */
         .ex3 ul {
             display: flex;
-            flex-wrap: wrap;
+            justify-content: center;
         }
         .ex3 li {
-            flex: 0 0 23%;
-            margin: 1%;
+            width: 20%;
+            padding: 1%;
         }
+
     </style>
 </head>
 <body>
-    <h1>jQuery animation()</h1>
+    <h1>jQuery append()</h1>
     <div id="sample1" class="sample">
-        <h2>Sample01 : 숨기기, 보이기 <span class="dot"></span></h2>
+        <h2>Sample01 : 요소 추가하기 <span class="dot"></span></h2>
         <div class="ex ex1">
             <ul>
-                <li><img src="img/images13.jpg" alt="이미지13"></li>
-                <li><img src="img/images14.jpg" alt="이미지14"></li>
-                <li><img src="img/images15.jpg" alt="이미지15"></li>
-                <li><img src="img/images16.jpg" alt="이미지16"></li>
+                <li><img src="../assets/img/images13.jpg" alt="이미지13"></li>
+                <li><img src="../assets/img/images14.jpg" alt="이미지14"></li>
+                <li><img src="../assets/img/images15.jpg" alt="이미지15"></li>
+                <li><img src="../assets/img/images16.jpg" alt="이미지16"></li>
             </ul>
     </div>
     <div class="re">
-        <a href="#c" class="btn1-1">클릭 : 이미지가 사라집니다.</a>
-        <a href="#c" class="btn1-2">클릭 : 이미지가 나타납니다.</a>
-        <a href="#c" class="btn1-3">클릭 : 이미지가 나타나고/사라집니다.</a>
+        <a href="#c" class="btn1-1">클릭 : 이미지가 뒤에 추가됩니다.</a>
+        <a href="#c" class="btn1-2">클릭 : 이미지가 앞에 추가됩니다.</a>
+        <a href="#c" class="btn1-3">클릭 : 앞쪽에 있는 이미지를 삭제합니다.</a>
+        <a href="#c" class="btn1-4">클릭 : 뒤쪽에 있는 이미지를 삭제합니다.</a>
     </div>
     <!--//sample1-->
 
     <hr>
     <div id="sample2" class="sample">
-        <h2>Sample02 : 페이드 효과 : 천천히 숨기기, 보이기 <span class="dot"></span></h2>
+        <h2>Sample02 : 이미지 랜덤으로 추가하기 <span class="dot"></span></h2>
         <div class="ex ex2">
             <ul>
-                <li><img src="img/images10.jpg" alt="이미지10"></li>
-                <li><img src="img/images11.jpg" alt="이미지11"></li>
-                <li><img src="img/images12.jpg" alt="이미지12"></li>
-                <li><img src="img/images13.jpg" alt="이미지13"></li>
+                <li><img src="../assets/img/images18.jpg" alt="이미지18"></li>
             </ul>
     </div>
     <div class="re">
-        <a href="#c" class="btn2-1">클릭 : 이미지가 천천히 사라집니다.</a>
-        <a href="#c" class="btn2-2">클릭 : 이미지가 천천히 나타납니다.</a>
-        <a href="#c" class="btn2-3">클릭 : 이미지가 천천히 나타나고/사라집니다.</a>
+        <a href="#c" class="btn2-1">클릭 : 이미지가 랜덤으로 뒤에 추가됩니다.</a>
+        <a href="#c" class="btn2-2">클릭 : 이미지가 랜덤으로 앞에 추가됩니다.</a>
     </div>
     <!--//sample2-->
 
     <hr>
     <div id="sample3" class="sample">
-        <h2>Sample03 : 슬라이드 효과 : 숨기기, 보이기 <span class="dot"></span></h2>
+        <h2>Sample03 : 2초에 한 번씩 이미지 이동하기 <span class="dot"></span></h2>
         <div class="ex ex3">
             <ul>
-                <li><img src="img/images06.jpg" alt="이미지06"></li>
-                <li><img src="img/images07.jpg" alt="이미지07"></li>
-                <li><img src="img/images08.jpg" alt="이미지08"></li>
-                <li><img src="img/images09.jpg" alt="이미지09"></li>
+                <li><img src="../assets/img/images01.jpg" alt="이미지01"></li>
+                <li><img src="../assets/img/images02.jpg" alt="이미지02"></li>
+                <li><img src="../assets/img/images03.jpg" alt="이미지03"></li>
             </ul>
     </div>
     <div class="re">
-        <a href="#c" class="btn3-1">클릭 : 이미지가 사라집니다.</a>
-        <a href="#c" class="btn3-2">클릭 : 이미지가 나타납니다.</a>
-        <a href="#c" class="btn3-3">클릭 : 이미지가 나타나고/사라집니다.</a>
+        <a href="#c" class="btn3-1">클릭 : 이미지가 2초에 한 번씩 이동합니다.</a>
+        <a href="#c" class="btn3-2">클릭 : 이미지가 이동을 멈춥니다.</a>
     </div>
-    <!--//sample2-->
-
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script>
         //sample01
-        //첫번째 이미지를 클릭하면 경고창을 띄워주세요
         $(".btn1-1").click(function(){
-            $(".ex1 ul li").hide();
+            $(".ex1 ul").append("<li><img src='img/images17.jpg' alt='이미지17'></li>");
         });
+
         $(".btn1-2").click(function(){
-            $(".ex1 ul li").show();
+            $(".ex1 ul").prepend("<li><img src='img/images12.jpg' alt='이미지12'></li>");
         });
+        
         $(".btn1-3").click(function(){
-            $(".ex1 ul li").toggle();
+            $(".ex1 ul li:first").remove();
+        });
+
+        $(".btn1-4").click(function(){
+            $(".ex1 ul li:last").remove();
         });
 
         //sample02
+        //$(".btn2-1").click(function(){
+        //    let random = Math.ceil(Math.random()*9)
+        //    $(".ex2 ul").append("<li><img src='img/images0"+random+".jpg' alt='이미지12'></li>");
+        //});
+
+        //$(".btn2-2").click(function(){
+        //    let random = Math.ceil(Math.random()*9)
+        //    $(".ex2 ul").prepend("<li><img src='img/images0"+random+".jpg' alt='이미지12'></li>");
+        //});
+
+        //sample02
+        function random(){
+            let num = Math.ceil(Math.random()*9);
+            let imgPath = "<li><img src='img/images0"+num+".jpg' alt='이미지12'></li>";
+            return imgPath;
+        }
         $(".btn2-1").click(function(){
-            $(".ex2 ul li").fadeOut();
+            $(".ex2 ul").append(random);
         });
         $(".btn2-2").click(function(){
-            $(".ex2 ul li").fadeIn();
-        });
-        $(".btn2-3").click(function(){
-            $(".ex2 ul li").fadeToggle();
+            $(".ex2 ul").prepend(random);
         });
 
         //sample03
+        //2초에 한 번씩 움직여야 합니다.
+
+        let timer;
+
         $(".btn3-1").click(function(){
-            $(".ex3 ul li").slideUp();
+            timner = setInterval(function(){
+                $(".ex3 li:last").prependTo(".ex3 ul");
+        }, 2000);
         });
+        
         $(".btn3-2").click(function(){
-            $(".ex3 ul li").slideDown();
-        });
-        $(".btn3-3").click(function(){
-            $(".ex3 ul li").slideToggle();
+            clearInterval(timner)
         });
 
     </script>
